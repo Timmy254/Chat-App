@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&family=Montserrat&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Chat App CSS Illustration</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body {
+      font-size: 16px;
+      margin: 0;
+    }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    .corner-one {
+      width: 27%;
+      height: 43.8rem;
+      background-image: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+      display: inline-block;
+      border-radius: 0 0 55% 175px;
+    }
+    .chat-app {
+      display: inline-block;
+      position: absolute;
+      left: 23%;
+      border: 10px solid hsl(0, 0%, 100%);
+      border-radius: 50px;
+      margin-top: 3%;
+      background-color: hsl(270, 20%, 96%);
+      width: 19%;
+      height: 620px;
+    }
+    .corner-two {
+      display: inline-block;
+      position: absolute;
+      left: 44%;
+      margin-top: 18%;
+
+    }
+    .text {
+      width: 60%;
+      line-height: 2;
+
+    }
+    .small-text-left{
+      text-align: left;
+      font-size: 0.80rem;
+      background-color: #FAE6FA;
+      color: hsl(276, 55%, 52%);
+      padding: 10px;
+    }
+    .small-text {
+      width: 100%;
+      text-align: left;
+      color: hsl(271, 15%, 43%);
+      font-size: 0.70rem;
+      background-color: hsl(0, 0%, 100%);
+      position: relative;
+      left: 90px;
+      padding: 8px;
+    }
+    .corners2 {
+      border-radius: 60px;
+      border: hsl(0, 0%, 100%);
+      width: 160px;
+      height: 30px;
+      margin: 13px 8px 8px 8px;
+    }
+    input::placeholder {
+      color: hsl(206, 6%, 79%);
+      font-size: 0.75rem;
+      font-style: italic;
+    }
+    #cornerplaceholder {
+      border-radius: 60px;
+      border: hsl(0, 0%, 100%);
+      padding: 5px 5px 5px 20px;
+      width: 240px;
+      height: 33px;
+      margin: 5px 10px 10px 10px;
+      background-color: hsl(0, 0%, 100%);
+      background-image: url(https://icons.iconarchive.com/icons/goescat/macaron/24/telegram-icon.png);
+      background-position: 230px 10px;
+      background-repeat: no-repeat;
+    }
+    #avatar-img {
+      width: 2.0rem;
+      border-radius: 90%;
+      border: 0.1rem solid hsl(0, 0%, 100%);
+      position: relative;
+      top: 40px;
+      left: 45px;
+    }
+    #app-text {
+      float: right;
+      font-size: 0.90rem;
+      color: hsl(0, 0%, 100%);
+      position: relative;
+      right: 95px;
+      top: 25px;
+      font-family: 'Montserrat',serif;
+    }
+    #app-toolbar {
+      background-image: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+      border-radius: 38px 38px 8px 8px;
+      height: 90px;
+    }
+    #avatar-text {
+      float: right;
+      position: relative;
+      right: 30px;
+      top: 50px;
+      font-size: 0.45rem;
+      color: white;
+      font-family: 'Montserrat',serif;
+    }
+    .corners3 {
+      border-radius: 60px;
+      border: hsl(0, 0%, 100%);
+      width: 105px;
+      height: 20px;
+      margin: 13px 8px 8px 8px;
+    }
+    .small-texts {
+      text-align: left;
+      color: hsl(271, 15%, 43%);
+      font-size: 0.70rem;
+      background-color: hsl(0, 0%, 100%);
+      position: relative;
+      left: 145px;
+      padding: 8px;
+    }
+    .dog-images {
+      border-radius: 20%;
+      position: relative;
+      left: 115px;
+    }
+    .options {
+      border-radius: 8px;
+      border: hsl(0, 0%, 100%);
+      width: 210px;
+      height: 30px;
+      margin: 13px 8px 8px 8px;
+      padding-top: 9px;
+      background-image: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+      color: white;
+      font-size: 0.7rem;
+    }
+    #options-text {
+      font-size: 1.3rem;
+      position: relative;
+      left: 70px;
+    }
+    #options-texts {
+      font-size: 1.3rem;
+      position: relative;
+      left: 82px;
+    }
+    .final-banner {
+      display: inline-block;
+      position: absolute;
+      right: 1px;      background-color: #FAE6FA;
+      height: 41.0rem;
+      width: 22%;
+      margin-top: 130px;
+      border-radius: 60% 0 0 0;
+    }
+    #top-border {
+      width: 125px;
+      background-color: white;
+      height: 25px;
+      position: absolute;
+      left: 80px;
+      border-radius: 0 0 10px 10px;
+
+    }
+    #back-button {
+      height: 25px;
+      width: 20px;
+      position: absolute;
+      left: 12px;
+      top: 45px;
+    }
+    #menu-button {
+      height: 3px;
+      width: 10px;
+      position: absolute;
+      right: 30px;
+      top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <div class="corner-one">
+
+  </div>
+
+  <div class="chat-app">
+    <div id="top-border">
+
+    </div>
+    <div id="app-toolbar">
+      <span><img src="images/back.png" id="back-button"> </span> <img src="images/avatar.jpg" alt="Avatar Image" id="avatar-img" >
+      <h3 id="app-text">Samuel Green</h3>
+      <p id="avatar-text">Available to Walk</p>
+      <span id="menu-button"><img src="images/menu2.png"></span>
+    </div>
+    <p class="small-text-left corners2">That sounds great. I’d be happy with that.</p>
+    <p class="small-text-left corners2">Could you send over some pictures of your dog, please?</p>
+    <img style="width: 3rem" src="images/dog-image-1.jpg" alt="dog-picture1" class="dog-images">
+    <img style="width: 3rem" src="images/dog-image-2.jpg" alt="dog-picture2" class="dog-images">
+    <img style="width: 3rem" src="images/dog-image-3.jpg" alt="dog-picture3" class="dog-images">
+    <p class="small-text corners2">Here are a few pictures. She’s a happy girl!</p>
+    <p class="small-texts corners3">Can you make it?</p>
+    <p class="small-text-left corners2">She looks so happy! The time we discussed works. How long shall I take her out for?</p>
+    <div class="options">
+      <input type="radio">
+      <label>30 minute walk <span id="options-text">$29</span> </label><br>
+    </div>
+    <div class="options">
+      <input type="radio">
+      <label class=>1 hour walk <span id="options-texts">$49</span> </label>
+    </div>
+    <input placeholder="Type a Message" id="cornerplaceholder">
+  </div>
+
+  <div class="corner-two">
+    <h1 style="font-family: 'Montserrat', sans-serif; color: hsl(271, 36%, 24%); display: inline-block">Simple booking</h1>
+    <p class="text" style=" font-family: 'Merriweather', serif; color: hsl(270, 7%, 64%); margin-top: 0">
+      Stay in touch with our dog walkers through the chat interface. This makes it easy to
+      discuss arrangements and make bookings. Once the walk has been completed you can rate
+      your walker and book again all through the chat.
+    </p>
+  </div>
+  <div class="final-banner">
+
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Timmy Mason</a>.
+  </div>
+</body>
+</html>
+
+
+
